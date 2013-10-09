@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<phpdox xmlns="http://phpdox.de/config" silent="false">
+
+    <project name="Factory" source="src" workdir="${basedir}/build/api/xml">
+
+        <collector publiconly="false" backend="parser" />
+
+        <generator output="${basedir}/build/api/docs">
+
+            <enrich base="${basedir}/build/logs">
+                <source type="checkstyle" />
+                <source type="pmd" />
+            </enrich>
+
+            <build engine="html" enabled="true" output="html">
+                <template dir="${phpDox.home}/templates/html" />
+                <file extension="xhtml" />
+            </build>
+
+        </generator>
+    </project>
+
+</phpdox>
