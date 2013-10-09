@@ -22,6 +22,10 @@
         <exec executable="phpunit" failonerror="true"/>
     </target>
 
+    <target name="phpdox">
+        <exec executable="phpdox" failonerror="true"/>
+    </target>
+
     <target name="phpcs" description="Generate checkstyle.xml using PHP_CodeSniffer">
         <exec executable="phpcs" output="/dev/null">
             <arg line="--report=checkstyle
@@ -31,5 +35,5 @@
         </exec>
     </target>
 
-    <target name="build" depends="clean,phpab,phpcs,phpunit"/>
+    <target name="build" depends="clean,phpab,phpcs,phpdox,phpunit"/>
 </project>
