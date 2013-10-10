@@ -5,12 +5,25 @@ namespace TheSeer\Lib\Factory\Sample {
 
     class LoggerLocator {
 
+        /**
+         * @var MasterFactory
+         */
         private $factory;
 
+        /**
+         * @param MasterFactory $factory
+         */
         public function __construct(MasterFactory $factory) {
             $this->factory = $factory;
         }
 
+        /**
+         * @param $type
+         *
+         * @return LoggerInterface
+         *
+         * @throws \InvalidArgumentException
+         */
         public function getLogger($type) {
             switch($type) {
                 case 'file': {
