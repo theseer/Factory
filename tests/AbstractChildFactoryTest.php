@@ -4,7 +4,7 @@ namespace TheSeer\Lib\Factory {
     require __DIR__ . '/_stubs/StubAbstractChildFactory.php';
     require __DIR__ . '/_stubs/TestClass.php';
 
-    abstract class AbstractChildFactoryTest extends \PHPUnit_Framework_TestCase {
+    class AbstractChildFactoryTest extends \PHPUnit_Framework_TestCase {
 
         /**
          * @covers \TheSeer\Lib\Factory\AbstractChildFactory::registerMaster
