@@ -1,7 +1,7 @@
 <?php
 namespace TheSeer\Lib\Factory {
 
-    abstract class AbstractChildFactoryTest extends \PHPUnit_Framework_TestCase {
+    class AbstractChildFactoryTest extends \PHPUnit_Framework_TestCase {
 
         /**
          * @covers \TheSeer\Lib\Factory\AbstractChildFactory::registerMaster
