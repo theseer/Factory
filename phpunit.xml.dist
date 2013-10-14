@@ -2,7 +2,7 @@
 <phpunit backupGlobals="false"
          backupStaticAttributes="false"
          syntaxCheck="false"
-         bootstrap="src/autoload.php">
+         bootstrap="tests/bootstrap.php">
 
     <testsuites>
         <testsuite name="Factory">
@@ -13,6 +13,9 @@
     <filter>
         <whitelist addUncoveredFilesFromWhitelist="true">
             <directory suffix=".php">src</directory>
+            <exclude>
+                <file>src/autoload.php</file>
+            </exclude>
         </whitelist>
     </filter>
 

@@ -1,9 +1,6 @@
 <?php
 namespace TheSeer\Lib\Factory {
 
-    require __DIR__ . '/_stubs/StubChildFactory.php';
-    require __DIR__ . '/_stubs/ExtendedStubChildFactory.php';
-
     class MasterFactoryTest extends \PHPUnit_Framework_TestCase {
 
         /**
