@@ -6,7 +6,7 @@ namespace TheSeer\Lib\Factory\Sample {
     class SampleChildFactory extends AbstractChildFactory {
 
         public function createSomething() {
-            return new FileLogger(
+            return new Something(
                 $this->getMasterFactory()->createDependency()
             );
         }
