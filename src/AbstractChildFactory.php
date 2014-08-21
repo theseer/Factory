@@ -48,7 +48,7 @@ namespace TheSeer\Lib\Factory {
          *
          * @return array
          */
-        public function registerMaster(MasterFactory $factory) {
+        public function setMasterFactory(MasterFactory $factory) {
             $this->master = $factory;
         }
 

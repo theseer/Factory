@@ -36,17 +36,14 @@
  */
 namespace TheSeer\Lib\Factory {
 
-    interface ChildFactoryInterface {
+    class RegistryException extends \Exception {
 
-        /**
-         * @param MasterFactory $factory
-         *
-         * @return array
-         */
-        public function setMasterFactory(MasterFactory $factory);
+        const NoMethodsExported = 1;
+        const AlreadyRegistered = 2;
+        const OverrideAlreadyDefined = 3;
+        const SignaturesDiffer = 4;
+        const NoSuchMethod = 5;
 
     }
 
 }
-
-

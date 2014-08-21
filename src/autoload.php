@@ -9,8 +9,11 @@ spl_autoload_register(
             $classes = array(
                 'theseer\\lib\\factory\\abstractchildfactory' => '/AbstractChildFactory.php',
                 'theseer\\lib\\factory\\childfactoryinterface' => '/ChildFactoryInterface.php',
+                'theseer\\lib\\factory\\codegenerator' => '/CodeGenerator.php',
                 'theseer\\lib\\factory\\masterfactory' => '/MasterFactory.php',
-                'theseer\\lib\\factory\\masterfactoryexception' => '/MasterFactoryException.php'
+                'theseer\\lib\\factory\\masterfactoryexception' => '/MasterFactoryException.php',
+                'theseer\\lib\\factory\\registry' => '/Registry.php',
+                'theseer\\lib\\factory\\registryexception' => '/RegistryException.php'
             );
         }
         $cn = strtolower($class);
