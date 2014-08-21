@@ -11,6 +11,9 @@ namespace TheSeer\Lib\Factory {
         public function setMasterFactory(MasterFactory $factory) {
         }
 
+        /**
+         * @return \StdClass
+         */
         public function createStdClass() {
             return new \StdClass();
         }

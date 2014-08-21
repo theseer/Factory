@@ -4,14 +4,12 @@ namespace TheSeer\Lib\Factory {
     class AbstractChildFactoryTest extends \PHPUnit_Framework_TestCase {
 
         public function testGetMasterFactoryReturnsInstanceOfMasterFactory() {
-            /*
-            $factory = new Registry();
-            $factory->addFactory(new StubAbstractChildFactory());
+            $factory = new MasterFactory(new Registry());
+            $factory->registerFactory(new StubAbstractChildFactory());
             $this->assertInstanceOf(
-                'TheSeer\Lib\Factory\TestClass',
+                TestClass::class,
                 $factory->createTestClass()
             );
-            */
         }
     }
 

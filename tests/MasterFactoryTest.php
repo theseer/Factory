@@ -27,6 +27,17 @@ namespace TheSeer\Lib\Factory {
         }
 
         /**
+         * @expectedException \TheSeer\Lib\Factory\MasterFactoryException
+         * @expectedExceptionCode -1
+         */
+        public function testRegistryExceptionWhenRegisteringGetsTransformedToMasterFactoryException() {
+            $this->registry->expects($this->once())->method('addFactory')
+                           ->will($this->throwException(new RegistryException('foo', -1)));
+            $this->factory->registerFactory($this->getMock(ChildFactoryInterface::class));
+        }
+
+        /**
+         * @covers \TheSeer\Lib\Factory\MasterFactory::forward
          * @covers \TheSeer\Lib\Factory\MasterFactory::__call
          */
         public function testRegisteredChildFactoryGetsCalled() {
@@ -55,6 +66,7 @@ namespace TheSeer\Lib\Factory {
         public function testCallingNonMappedMethodThrowsException() {
             $this->factory->createUndefined();
         }
+
     }
 
 }
