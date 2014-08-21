@@ -1,0 +1,21 @@
+{
+    "name": "theseer/factory",
+    "description": "A powerful implementation of the factory pattern for PHP",
+    "type" : "library",
+    "require": {
+        "php": ">=5.4.0",
+        "ext-reflection": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "license": "BSD License",
+    "authors": [
+        {
+            "name": "Arne Blankerts",
+            "email": "arne@blankerts.de",
+            "role": "lead"
+        }
+    ]
+}
