@@ -5,6 +5,9 @@ namespace TheSeer\Lib\Factory\Sample {
 
     class LocatorFactory extends AbstractChildFactory {
 
+        /**
+         * @return LoggerLocator
+         */
         public function createLoggerLocator() {
             return new LoggerLocator($this->getMasterFactory());
         }

@@ -2,11 +2,14 @@
 namespace TheSeer\Lib\Factory\Sample {
 
     use TheSeer\Lib\Factory\MasterFactory;
+    use TheSeer\Lib\Factory\Registry;
 
     require __DIR__ . '/../../src/autoload.php';
     require __DIR__ . '/src/autoload.php';
 
-    $factory = new MasterFactory();
+    $registry = new Registry();
+    $factory = new MasterFactory($registry);
+
     $factory->registerFactory(
         new SampleChildFactory()
     );

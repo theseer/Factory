@@ -8,8 +8,8 @@ namespace TheSeer\Lib\Factory\Sample {
         /**
          * @return Something
          */
-        public function createSomething() {
-            return new Something();
+        public function createSomething(array $payload) {
+            return new Something($payload);
         }
 
     }

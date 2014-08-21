@@ -8,7 +8,7 @@ spl_autoload_register(
         if ($classes === null) {
             $classes = array(
                 'theseer\\lib\\factory\\sample\\samplechildfactory' => '/SampleChildFactory.php',
-                'theseer\\lib\\factory\\sample\\something' => '/Something.php'
+                'theseer\\lib\\factory\\sample\\something' => '/FileLoggerr.php'
             );
         }
         $cn = strtolower($class);

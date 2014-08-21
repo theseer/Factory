@@ -10,7 +10,7 @@ spl_autoload_register(
                 'theseer\\lib\\factory\\sample\\dependency' => '/Dependency.php',
                 'theseer\\lib\\factory\\sample\\dependencysamplechildfactory' => '/DependencySampleFactory.php',
                 'theseer\\lib\\factory\\sample\\samplechildfactory' => '/SampleChildFactory.php',
-                'theseer\\lib\\factory\\sample\\something' => '/FileLogger.phpp'
+                'theseer\\lib\\factory\\sample\\something' => '/Something.php'
             );
         }
         $cn = strtolower($class);

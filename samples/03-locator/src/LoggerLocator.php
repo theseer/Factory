@@ -2,16 +2,17 @@
 namespace TheSeer\Lib\Factory\Sample {
 
     use TheSeer\Lib\Factory\MasterFactory;
+    use TheSeer\Lib\Factory\Registry;
 
     class LoggerLocator {
 
         /**
-         * @var MasterFactory
+         * @var Registry
          */
         private $factory;
 
         /**
-         * @param MasterFactory $factory
+         * @param Registry $factory
          */
         public function __construct(MasterFactory $factory) {
             $this->factory = $factory;
