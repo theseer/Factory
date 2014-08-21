@@ -8,8 +8,11 @@ spl_autoload_register(
         if ($classes === null) {
             $classes = array(
                 'theseer\\lib\\factory\\abstractchildfactorytest' => '/AbstractChildFactoryTest.php',
+                'theseer\\lib\\factory\\differingstubchildfactory' => '/_stubs/DifferingStubChildFactory.php',
                 'theseer\\lib\\factory\\extendedstubchildfactory' => '/_stubs/ExtendedStubChildFactory.php',
                 'theseer\\lib\\factory\\masterfactorytest' => '/MasterFactoryTest.php',
+                'theseer\\lib\\factory\\overrideextendedstubchildfactory' => '/_stubs/OverrideExtendedStubChildFactory.php',
+                'theseer\\lib\\factory\\registrytest' => '/RegistryTest.php',
                 'theseer\\lib\\factory\\stubabstractchildfactory' => '/_stubs/StubAbstractChildFactory.php',
                 'theseer\\lib\\factory\\stubchildfactory' => '/_stubs/StubChildFactory.php',
                 'theseer\\lib\\factory\\testclass' => '/_stubs/TestClass.php'
