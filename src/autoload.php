@@ -12,6 +12,7 @@ spl_autoload_register(
                 'theseer\\lib\\factory\\codegenerator' => '/CodeGenerator.php',
                 'theseer\\lib\\factory\\masterfactory' => '/MasterFactory.php',
                 'theseer\\lib\\factory\\masterfactoryexception' => '/MasterFactoryException.php',
+                'theseer\\lib\\factory\\registeredtrait' => '/RegisteredTrait.php',
                 'theseer\\lib\\factory\\registry' => '/Registry.php',
                 'theseer\\lib\\factory\\registryexception' => '/RegistryException.php'
             );

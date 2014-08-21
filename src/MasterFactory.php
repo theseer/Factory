@@ -1,11 +1,6 @@
 <?php
 namespace TheSeer\Lib\Factory {
 
-    if (!class_exists('TheSeer\\Lib\\Factory\\RegisteredTrait', true)) {
-        trait RegisteredTrait {
-        }
-    }
-
     class MasterFactory {
 
         use RegisteredTrait;
