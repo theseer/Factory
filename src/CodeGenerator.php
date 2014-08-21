@@ -72,7 +72,11 @@ namespace TheSeer\Lib\Factory {
                     } else if ($parameterObj->isDefaultValueAvailable()) {
                         $parameter .= $parameterObj->getDefaultValue();
                     } else {
+                        // I have no idea how an optional parameter cannot have
+                        // a default value set, but obviously it can be ...
+                        // @codeCoverageIgnoreStart
                         $parameter .= 'NULL';
+                        // @codeCoverageIgnoreEnd
                     }
                 }
                 $list[] = $parameter;
